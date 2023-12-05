@@ -1,0 +1,17 @@
+name: demoi
+description: "A demo Flutter project"
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.2.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
