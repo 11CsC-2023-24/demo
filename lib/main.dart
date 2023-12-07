@@ -10,13 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        brightness: Brightness.dark,
       ),
-      themeMode: ThemeMode.dark,
       home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -42,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: [
           IconButton(
             icon: const Icon(Icons.replay),
+            tooltip: "Reset",
             onPressed: () {
               setState(() {
                 _counter = 0;
@@ -70,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
